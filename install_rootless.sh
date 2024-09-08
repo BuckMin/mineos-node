@@ -7,10 +7,10 @@ read -s UIPW
 # DOWNLOAD JAVA
 cd ~
 mkdir -p ~/.local/opt
-wget https://download.java.net/java/GA/jdk17.0.2/dfd4a8d0985749f896bed50d7138ee7f/8/GPL/openjdk-17.0.2_linux-x64_bin.tar.gz
-tar xf openjdk-17*
-mv ~/jdk-17.0.2 ~/.local/opt/
-JDK_PATH=$(realpath ~/.local/opt/jdk-17.0.2/bin)
+wget https://download.oracle.com/java/22/latest/jdk-22_linux-aarch64_bin.tar.gz
+tar xf openjdk-22*
+mv ~/jdk-22* ~/.local/opt/
+JDK_PATH=$(realpath ~/.local/opt/jdk-22*/bin)
 
 # DOWNLOAD WEBUI FROM GITHUB
 git clone https://github.com/hexparrot/mineos-node
